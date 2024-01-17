@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sign up form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+    <!-- Photo by <a href="https://unsplash.com/@therawhunter?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Massimiliano Morosinotto</a> on <a href="https://unsplash.com/photos/black-and-white-mountains-under-blue-sky-k1nok6_4uq8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+    <!-- <a href="https://www.flaticon.com/free-icons/fire" title="fire icons">Fire icons created by Freepik - Flaticon</a> -->
+    <!-- Photo by <a href="https://unsplash.com/@jrkorpa?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jr Korpa</a> on <a href="https://unsplash.com/photos/a-persons-shadow-with-a-yellow-string-in-the-air-u3yyYID6eP4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+  </head>
+  <body class="main-container">
+    <section class="hero-container">
+      <div class="overlay">
+        <div class="overlay-box">
+          <h1 class="title">Spirit animal</h1>
+        </div>
+      </div>
+    </section>
+    <section class="form-container">
+      <div class="intro-box">
+        <h2 class="intro-title">Where?</h2>
+        <p>
+          Where would you go if you could go on a spiritual discovery? Maybe you
+          need some insporation of places to have your inner awakening.
+        </p>
+        <p id="span-para">
+          Your spirit animal is waiting to be
+          <span class="span-text">discovered</span>
+        </p>
+      </div>
+
+      <div class="form-outer-wrapper">
+        <div class="form-inner-wrapper">
+          <form action="#">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="">First name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                  minlength="5"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="">Last name</label>
+                <input type="lastName" id="lastName" name="lastName" required />
+              </div>
+
+              <div class="form-group">
+                <label for="">Phone Number</label>
+                <input
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  required
+                  min="1"
+                  max="10"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="">Confirm password</label>
+                <input
+                  type="password_two"
+                  id="password_two"
+                  name="password_two"
+                  required
+                  minlength="5"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="sign-up-outer-wrapper">
+        <div class="sign-up-inner-wrapper">
+          <button type="submit">Create Account</button>
+          <p>Already have an account?<a href="">Log in</a></p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="app.js"></script>
+</html>
