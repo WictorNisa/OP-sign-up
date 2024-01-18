@@ -106,7 +106,7 @@
 
 .form-outer-wrapper {
   background: var(--rich-black-2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, .5);
   flex: 1;
   width: 100%;
 }
@@ -131,6 +131,10 @@ input {
   padding: 2px 8px 2px 8px;
   border:none;
   border-radius: 2px;
+  background-color: var(--battleship-gray);
+  font-weight: bolder;
+  color: var(--night);
+  box-shadow:10px 13px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 input:focus{
@@ -144,18 +148,21 @@ label {
   letter-spacing: 1.1px;
   font-size: 11px;
   font-weight: bold;
-  color: var(--battleship-gray);
+  color: var(--satin-sheen-gold);
 }
 
 .sign-up-outer-wrapper {
   flex: 1;
-
   width: 100%;
 }
 
 .sign-up-inner-wrapper {
   width: 50%;
   height: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .sign-up-inner-wrapper p {
@@ -174,6 +181,10 @@ a {
 }
 
 button {
+  position: absolute;
+  z-index: 2;
+  top: 500px;
+  left: 10px;
   margin: 2em auto 2em 2em;
   width: 180px;
   height: 40px;
@@ -183,7 +194,7 @@ button {
   font-weight: bolder;
   letter-spacing: 1.1px;
   color: var(--rich-black-2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  box-shadow:10px 13px 5px 0px rgba(0, 0, 0, 0.5);
   transition: all linear 0.2s;
   cursor: pointer;
 }
@@ -191,7 +202,7 @@ button {
 button:hover {
   background-color: #feca1dff;
   border: 1px solid #feca1dff;
-  
+  color: var(--satin-sheen-gold)
 }
 
 .form-group {
